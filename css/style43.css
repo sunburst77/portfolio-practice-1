@@ -1,0 +1,76 @@
+* {
+  font-family: 'Montserrat','Noto Sans KR', sans-serif;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  font-weight: normal;
+  line-height: 1.5em;
+  font-size: 18px;
+  background-color: #fff;
+  overflow: hidden;
+}
+a {
+  text-decoration: none;
+  color: #333;
+}
+ul {
+  list-style: none;
+  padding: 0; margin: 0;
+}
+
+.container {}
+input[id=trigger] {
+  display: none;
+}
+label[for=trigger] {
+  position: absolute;
+  width: 30px; height: 25px;
+  top: 10px; right: 10px;
+  cursor: pointer;
+  z-index: 1;
+  transition: .5s;
+}
+label[for=trigger] span {
+  width: inherit; height: 2px;
+  background-color: #000;
+  display: block;
+  position: absolute;
+  transition: .35s;
+}
+label[for=trigger] span:nth-child(2) {
+  position: absolute;
+  top: 50%; 
+  transform:translateY(-50%);
+}
+label[for=trigger] span:nth-child(3) {
+  position: absolute;
+  top: calc(100% - 2px);
+}
+input[id=trigger]:checked + label span {
+  background-color: #fff;
+}
+input[id=trigger]:checked + label span:nth-child(1) {
+  top: 50%;
+  transform: rotate(45deg);
+}
+input[id=trigger]:checked + label span:nth-child(3) {
+  top: 50%;
+  transform: rotate(-45deg);
+}
+input[id=trigger]:checked + label span:nth-child(2) {
+  opacity: 0;
+}
+.sidebar {
+  width: 250px; height: 100vh;
+  position: fixed;
+  background-color: #000;
+  right: -250px; top: 0;
+  transition: .5s;
+}
+input[id=trigger]:checked ~ .sidebar {
+  right: 0;
+}

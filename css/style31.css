@@ -1,0 +1,100 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Montserrat','Noto Sans KR', sans-serif;
+  margin: 0;
+  font-weight: 300;
+  font-size: 18px;
+  color: #fff;
+  background-color: #000;
+}
+a {
+  text-decoration: none;
+  color: gainsboro;
+}
+ul {
+  list-style: none;
+  padding: 0; margin: 0;
+}
+
+/* FAQ */
+/* .faq {
+  height: 100vh;
+} */
+.faq-inner {
+  width: 700px;
+  margin: auto;
+}
+.faq-inner h1 {
+  text-align: center;
+  font-size: 50px;
+  font-weight: 500;
+}
+.accordion {
+  font-size: 26px;
+}
+.accordion div {
+  background-color: #303030;
+  padding: 10px 15px;
+  margin-bottom: 7px;
+}
+.accordion .title {
+  cursor: pointer;
+  transition: .3s;
+}
+.accordion .title::after {
+  content: '\e9c5';
+  font-family : xeicon;
+  float: right;
+  margin-top: 5px;
+  transition: .3s;
+}
+.accordion .content {
+  display: none;
+}
+.accordion .title.active {
+  background-color: #353b48;
+}
+.accordion .content.active {
+  display: block;
+}
+.accordion .title.active::after {
+  transform: rotate(45deg);
+}
+.newsletter {
+  width: 90%;
+  margin: 30px auto;
+  text-align: center;
+}
+.newsletter p {
+  font-size: 20px;
+}
+.newsletter div {
+  display: flex;
+  justify-content: center;
+}
+.newsletter input,
+.newsletter button  {
+  border: none;
+  outline: none;
+  height: 60px;
+  vertical-align: middle;
+  font-size: 20px;
+}
+.newsletter input {
+  flex: 3;
+}
+.newsletter button {
+  flex: 1;
+  background-color: #e84118;
+  color: #fff;
+  cursor: pointer;
+}
+.newsletter button::after {
+  content: '\e93f';
+  font-family : xeicon;
+  float: right;
+  font-size: 30px;
+  /* vertical-align: -2px; */
+}

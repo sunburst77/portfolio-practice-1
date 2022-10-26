@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>탭메뉴 콘텐츠 - with jquery</title>
+
+  <!-- font -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400&family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/font-awesome.css">
+  <link rel="stylesheet" href="css/style23.css">
+
+  <!-- JS -->
+  <script src="js/jquery-1.12.4.js"></script>
+  <script defer src="js/custom23.js"></script>
+</head>
+<body>
+  <section>
+    <div class="heading">
+      <h1><span>코딩웍스</span>, 프론트엔드 퍼블리셔 취업을 위한 실전 퍼블리싱 강좌</h1>
+      <div class="search">
+        <i class="fa fa-search" aria-hidden="true"></i>
+        <input type="text" name="" id="" placeholder="What are you looking for?">
+      </div>
+    </div>
+    <div clas="tab-inner">
+      <ul class="btn">
+        <li data-alt="tab1" class="active">HTML5</li>
+        <li data-alt="tab2">CSS3</li>
+        <li data-alt="tab3">JQUERY</li>
+        <li data-alt="tab4">JAVASCRIPT</li>
+        <li data-alt="tab5">CSS FRAMEWORKS</li>
+      </ul>
+      <div class="tabs">
+        <div id="tab1" class="active">
+          <h2>HTML5</h2>
+          <img src="images/platform-logo-01.png" alt="">
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem, illo alias? Voluptate asperiores officiis sit vero alias at consequatur, et nulla unde modi voluptatem quibusdam consectetur. Reiciendis fugit a veniam et eaque, laborum nisi quos porro cum dolores illo voluptatibus qui tenetur placeat aut quaerat, rerum nesciunt iste quisquam, necessitatibus dolorum error? Reiciendis voluptate et velit, labore libero similique, voluptatem a eaque tenetur rem at ab quis temporibus. Quas est blanditiis voluptate expedita quae. Hic magni quia perspiciatis beatae. Quaerat omnis culpa assumenda officiis saepe a accusantium vero laudantium officia. Iusto voluptatem laborum commodi repellendus exercitationem harum doloribus ullam porro.
+          </p>
+        </div>
+        <div id="tab2">
+          <h2>CSS3</h2>
+          <img src="images/platform-logo-02.png" alt="">
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem, illo alias? Voluptate asperiores officiis sit vero alias at consequatur, et nulla unde modi voluptatem quibusdam consectetur. Reiciendis fugit a veniam et eaque, laborum nisi quos porro cum dolores illo voluptatibus qui tenetur placeat aut quaerat, rerum nesciunt iste quisquam, necessitatibus dolorum error? Reiciendis voluptate et velit, labore libero similique, voluptatem a eaque tenetur rem at ab quis temporibus. Quas est blanditiis voluptate expedita quae. Hic magni quia perspiciatis beatae. Quaerat omnis culpa assumenda officiis saepe a accusantium vero laudantium officia. Iusto voluptatem laborum commodi repellendus exercitationem harum doloribus ullam porro.
+          </p>
+        </div>
+        <div id="tab3">
+          <h2>JQUERY</h2>
+          <img src="images/platform-logo-03.png" alt="">
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem, illo alias? Voluptate asperiores officiis sit vero alias at consequatur, et nulla unde modi voluptatem quibusdam consectetur. Reiciendis fugit a veniam et eaque, laborum nisi quos porro cum dolores illo voluptatibus qui tenetur placeat aut quaerat, rerum nesciunt iste quisquam, necessitatibus dolorum error? Reiciendis voluptate et velit, labore libero similique, voluptatem a eaque tenetur rem at ab quis temporibus. Quas est blanditiis voluptate expedita quae. Hic magni quia perspiciatis beatae. Quaerat omnis culpa assumenda officiis saepe a accusantium vero laudantium officia. Iusto voluptatem laborum commodi repellendus exercitationem harum doloribus ullam porro.
+          </p>
+        </div>
+        <div id="tab4">
+          <h2>JAVASCRIPT</h2>
+          <img src="images/platform-logo-04.png" alt="">
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem, illo alias? Voluptate asperiores officiis sit vero alias at consequatur, et nulla unde modi voluptatem quibusdam consectetur. Reiciendis fugit a veniam et eaque, laborum nisi quos porro cum dolores illo voluptatibus qui tenetur placeat aut quaerat, rerum nesciunt iste quisquam, necessitatibus dolorum error? Reiciendis voluptate et velit, labore libero similique, voluptatem a eaque tenetur rem at ab quis temporibus. Quas est blanditiis voluptate expedita quae. Hic magni quia perspiciatis beatae. Quaerat omnis culpa assumenda officiis saepe a accusantium vero laudantium officia. Iusto voluptatem laborum commodi repellendus exercitationem harum doloribus ullam porro.
+          </p>
+        </div>
+        <div id="tab5">
+          <h2>CSS FRAMEWORKS</h2>
+          <img src="images/platform-logo-05.png" alt="">
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem, illo alias? Voluptate asperiores officiis sit vero alias at consequatur, et nulla unde modi voluptatem quibusdam consectetur. Reiciendis fugit a veniam et eaque, laborum nisi quos porro cum dolores illo voluptatibus qui tenetur placeat aut quaerat, rerum nesciunt iste quisquam, necessitatibus dolorum error? Reiciendis voluptate et velit, labore libero similique, voluptatem a eaque tenetur rem at ab quis temporibus. Quas est blanditiis voluptate expedita quae. Hic magni quia perspiciatis beatae. Quaerat omnis culpa assumenda officiis saepe a accusantium vero laudantium officia. Iusto voluptatem laborum commodi repellendus exercitationem harum doloribus ullam porro.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+</html>

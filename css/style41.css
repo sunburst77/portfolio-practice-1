@@ -1,0 +1,71 @@
+* {
+  font-family: 'Montserrat','Noto Sans KR', sans-serif;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  font-weight: normal;
+  line-height: 1.5em;
+  font-size: 18px;
+  background-color: #eee;
+}
+a {
+  text-decoration: none;
+  color: #333;
+}
+ul {
+  list-style: none;
+  padding: 0; margin: 0;
+}
+
+.container {}
+header {
+  background-color: teal;
+  text-align:right;
+  padding: 0 20px;
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%;
+}
+header a {
+  color: #fff;
+  text-transform: uppercase;
+  display: inline-block;
+  width: 150px; height: 60px;
+  text-align: center;
+  /* padding: 20px 0; */
+  font-size: 21px;
+  letter-spacing:-0.03em;
+  font-weight: 300;
+  line-height: 60px;
+}
+header a:last-child {
+  width: 200px;
+}
+.container > div {
+  width: 950px;
+  margin: 0 auto;
+  padding: 100px 50px;
+  background-color: #fff;
+}
+.container > div h1 {
+  margin-bottom: 50px;
+  text-transform: uppercase;
+}
+.container > div p {
+  margin-top: 50px;
+  font-size: 20px;
+  line-height: 1.6em;
+}
+.btn-gototop {
+  position: fixed;
+  right: 20px; bottom: 20px;
+  background-color: #333;
+  color: #fff;
+  width: 70px; height: 70px;
+  text-align: center;
+  line-height: 70px;
+}

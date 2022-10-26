@@ -1,0 +1,95 @@
+body {
+  font-family: 'Montserrat', 'Noto Sans KR', sans-serif;
+  margin: 0;
+  font-weight: 300;
+  color: #222; 
+}
+a {
+  text-decoration: none;
+  color: #222;
+}
+ul {
+  list-style: none;
+  padding: 0; margin: 0;
+}
+h1,h2,h3,h4,h5,h6 {
+  font-weight: normal;
+}
+/* 레이아웃 */
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+section article {
+  width: 980px;
+  height: 500px;
+}
+.heading {
+  text-align: center;
+}
+.heading span {
+  color: crimson;
+  font-size: 24px;
+}
+.heading h1 {
+  font-size: 36px;
+  margin-top: 10px;
+}
+.heading h1 em {
+  position: relative;
+  font-style: normal;
+}
+.heading h1 em::after {
+  position: absolute;
+  content: url(../images/logo-kakao.png);
+  right: -30px; top: -25px;
+}
+.content {
+}
+.content > div {
+  height: 400px;
+  width: 50%;
+  float: left;
+  box-sizing: border-box;
+}
+.accordion {}
+.accordion .title {
+  border: 1px solid #ddd;
+  padding: 5px;
+  border-radius: 3px;
+  cursor: pointer;
+  padding-left: 15px;
+  margin-bottom: 10px;
+  transition: .3s;
+  /* position: relative; */
+}
+.accordion .title::after {
+  content: '\f105';
+  font-family: fontawesome;
+  /* position: absolute;
+  top: 8px; right: 10px; */
+  float: right;
+  margin-right: 5px; margin-top: 3px;
+  transition: .3s;
+}
+.accordion .title:hover,
+.accordion .title.active {
+  background-color: #203049;
+  color: #fff;
+}
+.accordion .title.active::after {
+  transform: rotate(90deg);
+  color: orange;
+}
+.accordion .desc {
+  padding: 15px;
+  display: none;
+}
+.accordion .desc.active {
+  display: block;
+}
+.image {}
+
+

@@ -1,0 +1,93 @@
+body {
+  font-size: 15px;
+  line-height: 1.5em;
+  color: #333;
+  font-weight: 300;
+}
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+.container { width: 90%; margin: 0 auto;}
+.container > h2 { text-align: center; margin: 20px 0;}
+
+#info { margin: 20px 0;}
+#info h2 { text-align: center; }
+.info {}
+.info .item { position: relative; width: 300px; margin: 0 auto 10px auto;}
+.info .item input[type=text],
+.info .item input[type=email],
+.info .item input[type=tel] {
+ border: 1px solid lightgray;
+ height: 40px; width: inherit;
+ border-radius: 5px;
+ padding: 10px; 
+ box-sizing: border-box;
+ padding-left: 50px;
+ outline: none;
+ transition: .3s;
+}
+.info .item .fa { 
+  position: absolute; 
+  top: 0; left: 0;
+  color: #fff; background-color: gray;
+  font-size: 20px;
+  width: 40px; height: 40px;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 5px 0 0 5px;
+  transition: .3s;
+}
+.info .item input:focus {
+  border: 1px solid dodgerblue;
+  box-shadow: 0 0 5px dodgerblue;
+}
+.info .item input:focus + .fa {
+  background-color: dodgerblue;
+}
+.info .item input:focus::placeholder {
+  visibility: hidden;
+}
+
+#skill-progress { 
+  margin: 50px 0;
+
+}
+.skill-progress { text-transform: uppercase; width: 500px; margin: 0 auto; padding: 20px; background-color: #333; border-radius: 10px; color: #fff; box-shadow: 0 0 20px rgba(0, 0, 0, 0.103); }
+.skill-progress h1 { text-align: center; margin-bottom: 40px; font-size: 40px; font-weight: normal; }
+.skill-progress .item {}
+.skill-progress .item p { overflow: hidden; margin-bottom: 5px;}
+.skill-progress .item .progress { 
+  border: 1px solid #6cd4c4;
+  padding: 5px;
+  border-radius: 3px;
+}
+.skill-progress .item p span:nth-child(1) { float: left;}
+.skill-progress .item p span:nth-child(2) { float: right;}
+.skill-progress .item .progress .progress-level {
+  height: 10px;
+  background: linear-gradient(to right, crimson, gold);
+  animation-name: ani;
+  animation-duration: 1s;
+  animation-fill-mode: both;  /* 100%에서 멈춰라 */
+}
+.skill-progress .item:nth-of-type(1) .progress-level {
+  animation-delay: 0s;
+}
+.skill-progress .item:nth-of-type(2) .progress-level {
+  animation-delay: 0.2s;
+}
+.skill-progress .item:nth-of-type(3) .progress-level {
+  animation-delay: 0.4s;
+}
+.skill-progress .item:nth-of-type(4) .progress-level {
+  animation-delay: 0.6s;
+}
+.skill-progress .item:nth-of-type(5) .progress-level {
+  animation-delay: 0.8s;
+}
+
+@keyframes ani {
+  0% { width: 0; }
+}

@@ -1,0 +1,145 @@
+body {
+  line-height: 1.5em;
+  margin: 0;
+  font-family: 'Montserrat', serif;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* 갤러리이미지 어코디언 네비게이션 */
+.gallery {
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+}
+.gallery li {
+  position: relative;
+  border-right: 5px solid #000;
+  flex: 1;
+  cursor: pointer;
+  overflow: hidden;
+  transition: .5s;
+}
+.gallery:hover li {
+  flex: 1;
+}
+.gallery li:hover {
+  flex: 3;
+  filter: grayscale(1);
+}
+.gallery li:last-child {
+  border-right: none;
+}
+.gallery li:nth-child(1) {
+  background: url('../images/artistic-image-01.jpg') no-repeat center center;
+}
+.gallery li:nth-child(2) {
+  background: url('../images/artistic-image-02.jpg') no-repeat center center;
+}
+.gallery li:nth-child(3) {
+  background: url('../images/artistic-image-03.jpg') no-repeat center center;
+}
+.gallery li:nth-child(4) {
+  background: url('../images/artistic-image-04.jpg') no-repeat center center;
+}
+.gallery li:nth-child(5) {
+  background: url('../images/artistic-image-05.jpg') no-repeat center center;
+}
+.gallery .content {
+  position: absolute;
+  left: 0;
+  bottom: -400px;
+  background-color: #000;
+  width: 100%;
+  height: 250px;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  box-sizing: border-box;
+  transition: .5s;
+}
+.gallery .content::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 120px;
+  background: #000;
+  z-index: -1;
+  transform-origin: left bottom;
+  transform: rotate(-6deg) scale(1.3);
+}
+.gallery li:hover .content {
+  bottom: 0;
+  transition-delay: .5s;
+}
+.gallery .sns a {
+  color: #333;
+}
+
+/* 그라디언트 텍스트 */
+.heading {
+  margin: 0;
+  font-size: 5em;
+  line-height: 2em;
+  text-align: center;
+  padding-top: 100px;
+  background: linear-gradient(to right, yellow, yellowgreen);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* 마우스 올리면 배경이미지 교체 */
+.container {
+  height: 100vh;
+}
+.navi {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 100;
+}
+.navi li {}
+.navi li a {
+  position: relative;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 4em;
+  line-height: 1.4em;
+  font-weight: bold;
+}
+.navi li a::before {
+  content:attr(data-text);
+  position: absolute;
+  width: 0;
+  left: 0;
+  top: -5px;
+  text-transform: uppercase;
+  background-color: #FA8BFF;
+  background-image: linear-gradient(45deg, #FA8BFF 0%, #2BD2FF 52%, #2BFF88 90%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  overflow: hidden;
+  transition: .3s;
+}
+.navi li a:hover::before {
+  width: 100%;
+}
+.photo {
+  background-image: url('../images/portrait-initial.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transition: .5s;
+}

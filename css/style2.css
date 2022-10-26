@@ -1,0 +1,33 @@
+.ex2 { margin: 30px 0;}
+.ex2 a { padding: 10px; text-align: center; background-color: #ddd; color: #333; border-radius: 5px; width: 150px; text-decoration: none; display: inline-block;}
+.ex2 div { width: 200px; height: 200px; background-color: dodgerblue; margin: 10px 0; line-height: 200px; text-align: center; color: #fff; display: none;}
+
+.ex3 { margin: 30px 0; float: left; margin-right: 30px;}
+.ex3 a { padding: 10px; text-align: center; background-color: #ddd; color: #333; border-radius: 5px; width: 150px; text-decoration: none; display: inline-block;}
+.ex3 div { width: 200px; height: 200px; background-color: dodgerblue; margin: 10px 0; line-height: 200px; text-align: center; color: #fff; display: none;}
+
+.ex4 { margin: 30px 0; float: left; margin-right: 30px;}
+.ex4 a { padding: 10px; text-align: center; background-color: #ddd; color: #333; border-radius: 5px; width: 150px; text-decoration: none; display: inline-block;}
+.ex4 div { width: 200px; height: 200px; background-color: dodgerblue; margin: 10px 0; line-height: 200px; text-align: center; color: #fff; display: none;}
+
+.ex5 { margin: 50px 0; float: left;}
+.ex5 a { padding: 10px; text-align: center; background-color: #ddd; color: #333; border-radius: 5px; width: 150px; text-decoration: none; display: inline-block;}
+.ex5 div { width: 200px; height: 200px; background-color: dodgerblue; margin: 10px 0; line-height: 200px; text-align: center; color: #fff; display: none;}
+
+.ex6 { margin: 50px 0; clear: both;}
+.ex6 a { padding: 10px; text-align: center; background-color: #ddd; color: #333; border-radius: 5px; width: 150px; text-decoration: none; display: inline-block;}
+.ex6 div { width: 200px; height: 200px; background-color: dodgerblue; margin: 10px 0; line-height: 200px; text-align: center; color: #fff;}
+.ex6 .active { background-color: red;}
+
+
+.ex7 ul { padding: 0; list-style: none; width: 200px; border: 1px solid #000;}
+.ex7 li {}
+.ex7 a { text-decoration: none; display: block; color: #333; padding: 5px; text-align: center;}
+.menu li > a { background-color: #000; color: #fff;}
+.menu > li {border-bottom:1px solid rgba(255,255,255,.1); }
+.menu > li:last-child {border-bottom: none;}
+.sub-menu { display: none;}
+
+.ex8 {margin: 50px 0;}
+.ex8 .tab span { background-color: #ddd; padding: 5px; width: 150px; text-align: center; display: inline-block; border-radius: 5px; margin-right: -6px;border: 1px solid #000; cursor: pointer; }
+.ex8 .tab span.active { background-color: #fff;}

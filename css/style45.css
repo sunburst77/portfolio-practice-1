@@ -1,0 +1,159 @@
+* {
+  font-family: 'Montserrat','Noto Sans KR', sans-serif;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  font-weight: 300;
+  line-height: 1.6em;
+  font-size: 15px;
+  background-color: #fff;
+  overflow: hidden;
+  color: #222;
+}
+a {
+  text-decoration: none;
+  color: #222;
+}
+ul {
+  list-style: none;
+  padding: 0; margin: 0;
+}
+
+.modal {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; width: 100%;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.315);
+  opacity: 0;
+  /* visibility: hidden; */
+  pointer-events: none;
+  transition: .5s;
+}
+.modal.active {
+  opacity: 1;
+  /* visibility: visible; */
+  pointer-events: all;
+}
+.modal-content {
+  position: relative;
+  width: 600px;
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.164);
+  display: flex;
+  overflow: hidden;
+  transform: translateY(-100px);
+  opacity: 0;
+  transition: .3s;
+}
+.modal.active .modal-content {
+  opacity: 1;
+  transform: translateY(0px);
+}
+.modal-content > div {
+  padding: 20px;
+}
+.photo {
+  flex: 1;
+  background: url(../images/office.jpg) no-repeat center right;
+  background-size: cover;
+}
+.desc {
+  flex: 2;
+  text-align: center;
+}
+.desc div {}
+.desc-header {
+  
+}
+.desc-header h2 {
+  margin-top: 0;
+}
+.desc-header .btn-close {
+  position: absolute;
+  top: 0px; right: 0px;
+  border: none;
+  background: transparent;
+  outline: none;
+  font-size: 27px;
+  cursor: pointer;
+  color: #999;
+  transition: .5s;
+}
+.desc-header .btn-close:hover {
+  color: #000;
+}
+.desc-content {}
+.desc-content input[type=email],
+.desc-content button {
+  display: block;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 10px;
+  padding: 7px;
+  outline:none;
+}
+.desc-content input[type=email] {
+  border: 1px solid #ccc;
+  margin-bottom: 5px;
+}
+.desc-content input[type=email]::placeholder {
+  color: #bbb;
+  transition: .3s;
+}
+.desc-content input[type=email]:focus::placeholder {
+  opacity: 0;
+  visibility: hidden;
+}
+.desc-content button {
+  border: none;
+  background-color: crimson;
+  color: #fff;
+  cursor: pointer;
+}
+
+button.btn-open1 {
+  background-color: darkgray;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  color: #fff;
+  z-index: -1;
+}
+
+@keyframes move {
+  0% {
+    opacity: 0;
+    transform: translateY(-200px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+
+
+@media only all and (max-width: 768px) {
+  .modal-content {
+    width: calc(100% - 20px);
+    flex-direction: column;
+  }
+  /* .modal-content > div {
+    width: 350px;
+  } */
+  .photo {
+    flex-basis: 350px;
+    background-position: center top -30px;
+  }
+  .desc-header .btn-close {
+    color: #fff;
+  }
+}

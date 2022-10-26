@@ -1,0 +1,105 @@
+body {
+  font-family: 'Montserrat', 'Noto Sans KR', sans-serif;
+  margin: 0;
+  line-height: 1.5em;
+  font-weight: normal;
+  color: #333; 
+  background-color: #eee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+a {
+  text-decoration: none;
+  color: #333;
+}
+ul {
+  list-style: none;
+}
+section {
+  /* border: 1px solid #000; */
+  width: 800px;
+}
+.heading {
+  margin-bottom: 20px;
+}
+.heading h1 {
+  text-align: center;
+}
+.heading h1 span { 
+  color: crimson;
+}
+.heading .search {
+  width: 100%;
+  border: 1px solid #ddd;
+  background-color: #fff;
+  padding: 5px 8px;
+  border-bottom: 3px solid #ddd;
+  box-sizing: border-box;
+}
+.heading .search .fa {
+  margin-right: 5px;
+  color: #555;
+}
+.heading .search input {
+  border: none;
+  outline: none;
+  width: calc(100% - 36px);
+}
+.heading .search input::placeholder {
+  font-style: italic;
+  opacity: 1;
+  transition: .3s;
+}
+.heading .search input:focus::placeholder {
+  opacity: 0;
+  visibility: hidden;
+}
+.btn {
+  padding: 0; margin: 0; 
+  overflow: hidden; 
+  margin-left: 10px;
+}
+.btn li {
+  float: left;
+  border-right: 1px solid #ccc;
+  background-color: #ddd;
+  width: 120px;
+  text-align: center;
+  cursor: pointer;
+  padding: 5px;
+  border-top: 2px solid transparent;
+}
+.btn li:last-child {
+  width: 200px;
+  border-right: none;
+}
+.btn li:hover,
+.btn li.active {
+  background-color: #fff;
+  border-top: 2px solid crimson;
+}
+.tabs {
+}
+.tabs div {
+  border: 1px solid #ddd;
+  background-color: #fff;
+  padding: 20px;
+  box-sizing: border-box;
+  border-top: none;
+  display: none;
+}
+.tabs div.active {
+  display: block;
+}
+.tabs div h2 {
+  text-align: center;
+}
+.tabs div img {
+  float: left;
+  margin-right: 20px;
+}
+.tabs div p {
+  overflow: hidden;
+}

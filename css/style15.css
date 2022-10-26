@@ -1,0 +1,96 @@
+body {
+  font-family: 'Montserrat', 'Noto Sans KR', sans-serif;
+  margin: 0;
+  line-height: 1.5em;
+  color: #333;
+}
+a {
+  text-decoration: none;
+  color: #333;
+}
+.container {
+  width: 1250px;
+  margin: 0 auto;
+  position: relative;
+}
+
+/* 커스텀 체크박스 스타일링 - 1 (이미지 사용) */
+#custom1 { margin: 50px 0;}
+.custom1 input[id=agree-chk] { display: none;}
+.custom1 label[for=agree-chk] em {
+  /* border: 1px solid red; */
+  width: 18px; height: 18px;
+  display: inline-block;
+  vertical-align: middle;  /* 인라인 요소끼리 수직 맞출때 */
+  margin-right: 5px;
+  background: url(../images/checkbox-01.png) no-repeat;
+  background-position: left center;
+}
+.custom1 input[id=agree-chk]:checked + label[for=agree-chk] em {
+  background-position: right center;
+}
+.custom1 label { margin-right: 40px;}
+.custom1 input[id=agree2-chk] { display: none;}
+.custom1 label[for=agree2-chk] em {
+  /* border: 1px solid red; */
+  width: 18px; height: 18px;
+  display: inline-block;
+  vertical-align: middle;  /* 인라인 요소끼리 수직 맞출때 */
+  margin-right: 5px;
+  background: url(../images/checkbox-02.png) no-repeat;
+  background-position: left center;
+}
+.custom1 input[id=agree2-chk]:checked + label[for=agree2-chk] em {
+  background-position: right center;
+}
+
+#grade {
+  margin: 50px 0;
+}
+.grade {
+  border-top: 1px solid #ddd;
+  padding: 50px 0;
+}
+.grade input[type=radio] {display: none;}
+.grade label {margin-right: 10px; cursor: pointer;}
+.grade label em {
+ /*  border: 1px solid red; */
+  display: inline-block;
+  width: 18px; height: 18px;
+  vertical-align: middle;
+  margin-right: 5px;
+  background: url(../images/radio-01.png) no-repeat;
+  background-position: left center;
+}
+.grade input[type=radio]:checked + label { color: crimson;}
+.grade input[type=radio]:checked + label em {
+  background-position: right center;
+}
+
+form { margin: 50px 0; border-top: 1px solid #ddd; padding: 50px 0;}
+input[name=lang] {display: none;}
+form label {display: block; margin: 15px;}
+form label::before {
+  content:'\f00c';
+  font-family: 'fontawesome';
+  border: 1px solid #000;
+  display: inline-block;
+  width: 16px; height: 16px;
+  border-radius: 3px;
+  margin-right: 5px;
+  font-size: 13px;
+  text-align: center;
+  line-height: 16px;
+  vertical-align: middle;
+  color: transparent;
+  transition: .3s;
+}
+input[name=lang] + label:active::before {
+  transform: scale(0);
+}
+input[name=lang]:checked + label::before {
+  background-color: crimson;
+  color: #fff;
+  border-color: transparent;
+  font-weight: bold;
+}

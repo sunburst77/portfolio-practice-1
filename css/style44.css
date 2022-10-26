@@ -1,0 +1,61 @@
+* {
+  font-family: 'Montserrat','Noto Sans KR', sans-serif;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  font-weight: normal;
+  line-height: 1.5em;
+  font-size: 18px;
+  background-color: #fff;
+  overflow: hidden;
+}
+a {
+  text-decoration: none;
+  color: #333;
+}
+ul {
+  list-style: none;
+  padding: 0; margin: 0;
+}
+:root {
+  --primary: skyblue;
+  --secondary: black;
+  --positive: yellowgreen;
+  --negative: crimson;
+  --big: 50px;
+  --medium: 30px;
+  --small: 20px;
+}
+.btn {
+  border: none;
+  padding: 5px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #fff;
+}
+.btn.primary {
+  background-color: var(--primary);
+}
+.btn.secondary {
+  background-color: var(--secondary);
+}
+.btn.positive {
+  background-color: var(--positive);
+}
+.btn.negative {
+  background-color: var(--negative);
+}
+
+.container h1 {
+  font-size: var(--big);
+}
+.container h3 {
+  font-size: var(--medium);
+}
+.container p {
+  font-size: var(--small);
+}

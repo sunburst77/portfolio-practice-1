@@ -1,0 +1,44 @@
+body {
+  font-family: 'Montserrat', 'Noto Sans KR', sans-serif;
+  margin: 0;
+  line-height: 1.5em;
+  font-weight: normal;
+  color: #333; 
+  background-color: #eee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+a {
+  text-decoration: none;
+  color: #333;
+}
+ul {
+  list-style: none;
+}
+section {
+  /* border: 1px solid #000; */
+  width: 800px;
+}
+.btn {
+  padding: 0; margin: 0; 
+  overflow: hidden; 
+}
+.btn li {
+  float: left;
+  border: 1px solid #000;
+  background-color: gray;
+}
+.btn li.active {
+  background-color: #fff;
+}
+.tabs {}
+.tabs div {
+  border: 1px solid #000;
+  height: 200px;
+  display: none;
+}
+.tabs div.active {
+  display: block;
+}

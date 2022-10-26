@@ -1,0 +1,22 @@
+* {
+  font-family: 'Montserrat','Noto Sans KR', sans-serif;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  font-weight: 300;
+  background-color: pink;
+  color: #222;
+}
+a {
+  text-decoration: none;
+  color: #222;
+}
+ul {
+  list-style: none;
+  padding: 0; margin: 0;
+}
+

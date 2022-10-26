@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>html 및 css</title>
+
+    <!-- css -->
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+
+    <!-- js -->
+    <script src="js/jquery-1.12.4.js"></script>
+    <script defer src="js/custom.js"></script>
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <ul class="menu">
+                <li>
+                    <a href="#">MENU-1</a>
+                    <ul>
+                        <li><a href="#">SUBMENU-1</a></li>
+                        <li><a href="#">SUBMENU-2</a></li>
+                        <li><a href="#">SUBMENU-3</a></li>
+                        <li><a href="#">SUBMENU-4</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">MENU-2</a>
+                    <ul>
+                        <li><a href="#">SUBMENU-1</a></li>
+                        <li><a href="#">SUBMENU-2</a></li>
+                        <li><a href="#">SUBMENU-3</a></li>
+                        <li><a href="#">SUBMENU-4</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">MENU-3</a>
+                    <ul>
+                        <li><a href="#">SUBMENU-1</a></li>
+                        <li><a href="#">SUBMENU-2</a></li>
+                        <li><a href="#">SUBMENU-3</a></li>
+                        <li><a href="#">SUBMENU-4</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">MENU-4</a>
+                    <ul>
+                        <li><a href="#">SUBMENU-1</a></li>
+                        <li><a href="#">SUBMENU-2</a></li>
+                        <li><a href="#">SUBMENU-3</a></li>
+                        <li><a href="#">SUBMENU-4</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div id="section1">
+        <div class="container">
+            <ol>
+                <li>방콕 쇼핑 리스트</li>
+                <li>
+                    방콕에서 반드시 들려야 할 베스트
+                    <ul>
+                        <li>씨암 (Siam)</li>
+                        <li>카오산 로드 (Khaosan Road)</li>
+                    </ul>
+                </li>
+                <li>방콕 맛집 리스트</li>
+                <li>방콕 관광 리스트</li>
+            </ol>
+        </div>
+    </div>
+
+    <div class="vmenu">
+        <div class="container">
+            <ul class="vm-tit">
+                <li>
+                    <a href="#" class="more">
+                        <i class="fa fa-user" aria-hidden="true"></i>회원관리
+                    </a>
+                    <ul class="smenu">
+                        <li><a href="#">회원목록</a></li>
+                        <li><a href="#">회원등록</a></li>
+                    </ul>
+                </li>
+                <li><a href="#" class="more">
+                    <i class="fa fa-barcode" aria-hidden="true"></i>상품관리
+                    </a>
+                    <ul class="smenu">
+                        <li><a href="#">상품목록</a></li>
+                        <li><a href="#">상품등록</a></li>
+                    </ul>                
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa fa-cogs" aria-hidden="true"></i>운영관리
+                </a>
+            </li>
+                <li>
+                    <a href="#">
+                        <i class="fa fa-file-archive-o" aria-hidden="true"></i>페이지관리
+
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="bd-test">
+       <div class="container">
+            <div class="box1">box1</div>
+            <div class="box2">box2</div>
+            <div class="box3">box3</div>
+            <div class="box4">box4</div>
+            <div class="box5">box5</div>
+            <div class="box6">box6</div>
+            <div class="box7">box7</div>
+            <div class="box8">box8</div>
+       </div>
+    </div>
+
+    <section id="float-htest">
+        <div class="container">
+            <div class="float-test">
+                <article>article</article>
+                <article>article</article>
+                <article>article</article>
+            </div>
+        </div>
+    </section>
+
+    <div class="wrapper">
+        <header>
+            <article class="logo"></article>
+            <article class="navi"></article>
+        </header>
+        <section class="s_box1"></section>
+        <section class="s_box2">
+            <article class="sub1"></article>
+            <article class="sub2"></article>
+            <article class="sub3"></article>
+        </section>
+        <footer></footer>
+    </div>
+
+    <section id="center">
+        <div class="container">
+            <div class="center">
+                <h2>가운데 배치하기</h2>
+                <div class="child"></div>
+            </div>
+            <div class="m-hover">
+                <h2>마우스 오버효과</h2>
+                <a href="#">법적고지</a>
+                <a href="#">개인정보취급방침</a>
+                <a href="#">개인정보처리방침</a>
+            </div>
+            <div class="m-hover2">
+                <h2>마우스 오버효과2</h2>
+                <a href="http://www.naver.com">네이버</a>
+                <a href="http://google.com">구글</a>
+                <a href="http://www.daum.net">다음</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="tab-menu">
+        <div class="container">
+            <div class="tab-menu">
+                <h2>탭메뉴 - first-child, last-child의 이해</h2>
+                <div class="tab-btn">
+                    <span>공지사항</span>
+                    <span>갤러리</span>
+                </div>
+                <div class="tab-cont">
+                    <a href="#none">SMS 발송 서비스 개선작업</a>
+                    <a href="#none">휴대폰 인증 서비스 개선작업</a>
+                    <a href="#none">카드사 부분 무이자 할부 이벤트</a>
+                    <a href="#none">올앳 시스템 작업 안내</a>
+                    <a href="#none">휴대폰 결제 시스템 작업 안내</a>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+</body>
+</html>

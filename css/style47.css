@@ -1,0 +1,43 @@
+* {
+  font-family: 'Montserrat','Noto Sans KR', sans-serif;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  font-weight: 300;
+  background-color: pink;
+  color: #222;
+}
+a {
+  text-decoration: none;
+  color: #222;
+}
+ul {
+  list-style: none;
+  padding: 0; margin: 0;
+}
+
+/* Slider */
+.myslider {
+  width: 800px;
+  margin: auto;
+}
+.myslider div {
+  border: 1px solid #000;
+  height: 300px;
+  background-color: #ddd;
+  font-size: 30px;
+}
+
+
+@media only all and (max-width:768px) {
+  .myslider{
+    width: 100%;
+  }
+  .slick-arrow {
+    display: none !important;
+  }
+}

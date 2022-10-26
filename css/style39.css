@@ -1,0 +1,55 @@
+* {
+  font-family: 'Montserrat','Noto Sans KR', sans-serif;
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-weight: normal;
+  line-height: 1.5em;
+  font-size: 18px;
+}
+a {
+  text-decoration: none;
+  color: #333;
+}
+ul {
+  list-style: none;
+  padding: 0; margin: 0;
+}
+
+/* html-accordion */
+.html-accordion {
+  width: 700px;
+  margin: 50px auto;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.144);
+  padding: 40px 20px;
+  border-radius: 20px;
+}
+.html-accordion h1 {
+  margin-top: 0;
+  text-align: center;
+}
+details {
+  padding: 0.5em 1em;
+}
+summary {
+  list-style: none;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+summary::after {
+  content:'\f107';
+  font-family: fontawesome;
+  float: right;
+}
+details[open] summary {
+  font-weight: bold;
+}
+details[open] summary::after {
+  transform: rotate(-180deg);
+}
+.detail-content {
+  background-color: #eee;
+  padding: 10px;
+  border-radius: 5px;
+}

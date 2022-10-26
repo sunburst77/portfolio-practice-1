@@ -1,0 +1,50 @@
+body {
+  font-family: 'Montserrat', 'Noto Sans KR', sans-serif;
+  margin: 0;
+  font-weight: normal;
+  color: #333; 
+ /*  background-color: #000; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+a {
+  text-decoration: none;
+  color: #333;
+}
+ul {
+  list-style: none;
+  padding: 0; margin: 0;
+}
+.photo {
+  background-color: #ddd;
+  position: absolute;
+  left: 0; top: 0;
+  width: 100%; height: 100%;
+  background-image: url(../images/portrait-initial.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  transition: .5s;
+}
+.navi {}
+.navi li {}
+.navi li a {
+  position: relative;
+  font-size: 4em;
+  color: #fff;
+  text-transform: uppercase;
+}
+.navi li a::before {
+  content: attr(data-text);
+  position: absolute;
+  color: yellowgreen;
+  left: 0; top: 0;
+  width: 0%;
+  overflow: hidden;
+  transition: .5s;
+}
+.navi li a:hover::before {
+  width: 100%;
+}

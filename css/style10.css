@@ -1,0 +1,157 @@
+body {
+  font-family: 'Montserrat', 'Noto Sans KR', sans-serif;
+  margin: 0;
+  line-height: 1.5em;
+}
+a {text-decoration: none;}
+
+.container { width: 1250px; margin: 0 auto; position: relative; }
+
+#tab-inner { text-align: center;}
+.tab-inner { position: relative; /* border: 1px solid red; */ width: 300px; height: 350px; margin: 0 auto;}
+.tab-inner input[name=tabmenu] { display: none; }
+.tab-inner .content { display: none; }
+.tab-inner .btn { position: absolute; width: 100%; bottom: 10px; }
+.tab-inner .btn label {
+  width: 20px; height: 20px;
+  background-color: lightgray;
+  display: inline-block;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.tab-inner input[id=tab1]:checked ~ .slide1,
+.tab-inner input[id=tab2]:checked ~ .slide2,
+.tab-inner input[id=tab3]:checked ~ .slide3
+ { display: block;}
+.tab-inner input[id=tab1]:checked ~ .btn label[for=tab1],
+.tab-inner input[id=tab2]:checked ~ .btn label[for=tab2] ,
+.tab-inner input[id=tab3]:checked ~ .btn label[for=tab3]
+ { background-color: crimson;}
+
+
+ #tab-inner2 { margin: 50px 0; text-align: center;}
+ .tab-inner2 { position: relative; width: 300px; height: 350px; margin: 0 auto;}
+ .tab-inner2 input[name=tabmenu2] { display: none; }
+ .tab-inner2 .content2 { position: absolute; opacity: 0; visibility: hidden; transition: .5s;}
+ .tab-inner2 .btn2 { position: absolute; width: 100%; padding: 0; bottom: 15px; left: 0; }
+ .tab-inner2 .btn2 label {
+   width: 20px; height: 20px;
+   display: inline-block;
+   background-color: lightgray;
+   border-radius: 50%;
+   cursor: pointer;
+ }
+
+ .tab-inner2 input[id=tab4]:checked ~ .content2.slide1,
+ .tab-inner2 input[id=tab5]:checked ~ .content2.slide2,
+ .tab-inner2 input[id=tab6]:checked ~ .content2.slide3 {
+   opacity: 1;
+   visibility: visible;
+ }
+ .tab-inner2 input[id=tab4]:checked ~ .btn2 label[for=tab4],
+ .tab-inner2 input[id=tab5]:checked ~ .btn2 label[for=tab5],
+ .tab-inner2 input[id=tab6]:checked ~ .btn2 label[for=tab6]
+  {
+   background-color: dodgerblue;
+ } 
+
+
+ #tab-inner3 { margin: 50px 0; text-align: center;}
+ .tab-inner3 { position: relative; width: 300px; height: 350px; margin: 0 auto; overflow: hidden;}
+ .tab-inner3 input[name=tabmenu3] { display: none; }
+ .tab-inner3 .content3 { 
+   position: absolute; 
+   left: -50px; top: 0;
+   opacity: 0; visibility: hidden; 
+   transition: .5s;}
+ .tab-inner3 .btn3 { position: absolute; width: 100%; padding: 0; bottom: 15px; left: 0; }
+ .tab-inner3 .btn3 label {
+   width: 20px; height: 20px;
+   display: inline-block;
+   background-color: lightgray;
+   border-radius: 50%;
+   cursor: pointer;
+ }
+.tab-inner3 .heading div {
+  position: absolute;
+  left: 20px; top: 20px;
+  width: 100px; height: 100px;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 30px;
+  font-weight: bold;
+  box-sizing: border-box;
+  padding-top: 30px;
+  transform: translateY(-50px);
+  opacity: 0;
+  transition: .5s;    
+}
+.tab-inner3 .heading div span { display: block; font-size: 20px; margin-top: 5px;}
+.tab-inner3 .heading .text1 { background-color: crimson;}
+.tab-inner3 .heading .text2 { background-color:dodgerblue; }
+.tab-inner3 .heading .text3 { background-color: yellowgreen; }
+
+ .tab-inner3 input[id=tab7]:checked ~ .content3.slide1,
+ .tab-inner3 input[id=tab8]:checked ~ .content3.slide2,
+ .tab-inner3 input[id=tab9]:checked ~ .content3.slide3 {
+   opacity: 1;
+   visibility: visible;
+   left: 0;
+ }
+ .tab-inner3 input[id=tab7]:checked ~ .btn3 label[for=tab7],
+ .tab-inner3 input[id=tab8]:checked ~ .btn3 label[for=tab8],
+ .tab-inner3 input[id=tab9]:checked ~ .btn3 label[for=tab9]
+  {
+   background-color: crimson;
+ } 
+ .tab-inner3 input[id=tab7]:checked ~ .heading .text1,
+ .tab-inner3 input[id=tab8]:checked ~ .heading .text2,
+ .tab-inner3 input[id=tab9]:checked ~ .heading .text3 {
+   transform: translateY(0);
+   opacity: 1;
+   transition-delay: .5s;
+ }
+
+
+ #tab-inner4 { margin: 50px 0; text-align: center;}
+ .tab-inner4 { width: 300px; height: 350px; margin: 0 auto; overflow: hidden;}
+ .tab-inner4 input[name=tabmenu4] { display: none; }
+ .tab-inner4 .slide { 
+   position: relative;
+   width: 300px; height: 300px;
+  }
+  .tab-inner4 .slide .slideinner {
+    position: absolute;
+    width: 900px;
+    font-size: 0; /* 이미지 사이의 마진을 없애줌  */
+    top: 0; left: 0;
+    transition: .5s;
+  }
+  .tab-inner4 .slide .slideinner a { }
+ .tab-inner4 .btn4 {text-align: center; margin-top: 10px; }
+ .tab-inner4 .btn4 label {
+   width: 20px; height: 20px;
+   display: inline-block;
+   background-color: lightgray;
+   border-radius: 50%;
+   cursor: pointer;
+ }
+
+ .tab-inner4 input[id=tab10]:checked ~ .slide .slideinner {
+   left: 0px;
+ }
+ .tab-inner4 input[id=tab11]:checked ~ .slide .slideinner {
+   left: -300px;
+ }
+ .tab-inner4 input[id=tab12]:checked ~ .slide .slideinner {
+   left: -600px;
+ }
+
+
+ .tab-inner4 input[id=tab10]:checked ~ .btn4 label[for=tab10],
+ .tab-inner4 input[id=tab11]:checked ~ .btn4 label[for=tab11],
+ .tab-inner4 input[id=tab12]:checked ~ .btn4 label[for=tab12]
+  {
+   background-color: crimson;
+ } 

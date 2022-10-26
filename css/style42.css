@@ -1,0 +1,46 @@
+* {
+  font-family: 'Montserrat','Noto Sans KR', sans-serif;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  font-weight: normal;
+  line-height: 1.5em;
+  font-size: 18px;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* height: 100vh; */
+}
+a {
+  text-decoration: none;
+  color: #333;
+}
+ul {
+  list-style: none;
+  padding: 0; margin: 0;
+}
+.bg-phone {
+  width: 450px; height: 965px;
+  background: #fff url(../images/mobile-phone.png) no-repeat center center;
+  background-size: cover;
+  border-radius: 10px;
+  margin: 70px;
+}
+.container {
+  width: 365px; height: 745px;
+  background: transparent;
+  margin: 50px auto auto;
+  border-radius: 0 0 50px 50px;
+  overflow: hidden;
+  /* margin-left: 5px; */
+}
+iframe {
+  width: 350px;
+  height: 745px;
+  margin: auto;
+}
